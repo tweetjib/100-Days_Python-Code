@@ -1,0 +1,33 @@
+print('''
+   oo`'._..---.___..-
+  (_, -.,      ..'`
+        `'.   ;
+           ::`
+          _;_;      ''')
+
+print("Welcome to the Dino Treasure Hunt.")
+print("Your mission is to run away from the angry Tyrannosaurus")
+print("You ran in a deep forest. After me there was a big angry Tyrannosarus stomped follow you.")
+choice1 = (input('You ran to a cliff. What should you do? type \"Jump" or "Fight" \n').lower())
+if choice1 == "jump":
+    print("Phew.. You were lucky enough below is a river.")
+    choice2 = input('OMG!!, the Rant jumped too. Seeing a boat near by.\n'
+                    'What should you do? Type "Boat" or "Land" \n').lower()
+    if choice2 == "land":
+        print("Ok, You was on the land. You stated run again")
+        choice3 = input('There are two portal doors "black" & "white". '
+                        'Type it for you final decision.\n').lower()
+        if choice3 == "black":
+            print('You transported to the new world back to you home. You WIN!')
+        elif choice3 == "white":
+            print('You transported above a volcano and fall to the larva. You\'re dead.')
+        else:
+            print('Wrong type!!')
+    elif choice2 == "boat":
+        print("Game Over! There were angry sneaks on the boat. You are dead")
+    else:
+        print("Wrong Type!!")
+elif choice1 == "fight":
+    print("Game Over! You are dead")
+else:
+    print("Wrong Type!!!")
